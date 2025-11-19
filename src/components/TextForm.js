@@ -13,6 +13,7 @@ export default function TextForm(props) {
   }
   const [text,setText] = useState('Varun');
   return (
+    <>
     <div>
       <div className="mb-3">
         <h1>{props.heading}</h1>
@@ -28,6 +29,11 @@ export default function TextForm(props) {
       </button>
       </div>
     </div>
+    <div className="container my-4">
+      <h1>Text Summary</h1>
+      <p>{text.split(' ').length}words,{text.length}charecters</p>
+    </div>
+    </>
   );
   
 }
