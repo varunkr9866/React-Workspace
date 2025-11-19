@@ -1,13 +1,17 @@
 import React, { useState } from "react";
 
 export default function TextForm(props) {
-  const [text,setText] = useState('');
+
   const handleClick = ()=>{
-    
+    console.log('ON Click');
+    let newText = text.toUpperCase();
+    setText(newText);
   }
-  const handleChange = ()=>{
-    
+  const handleChange = (event)=>{
+    console.log('OnChange');
+    setText(event.target.value);
   }
+  const [text,setText] = useState('Varun');
   return (
     <div>
       <div className="mb-3">
