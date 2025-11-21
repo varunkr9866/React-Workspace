@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import About from "./components/About.js";
+// import About from "./components/About.js";
 import Navbar from "./components/Navbar.js";
 import TextForm from "./components/TextForm.js";
 
@@ -21,8 +21,8 @@ function App() {
     <>
       <Navbar title = "TextUtils" aboutText = "About" mode ={mode} toggleMode={toggleMode}/>
       <div className="container">
-        <TextForm  heading = 'Enter the Text to anlyize Below'mode ={mode} />
-        <About/>
+        <TextForm  heading = 'Enter the Text to anlyize Below' mode ={mode} />
+        {/* <About/> */}
       </div>
       
     </>
