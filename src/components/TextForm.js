@@ -15,11 +15,12 @@ export default function TextForm(props) {
   return (
     <>
     <div>
-      <div className="mb-3">
+      <div className="mb-3" style={{color:props.mode ==='dark'?'white':'black'}} >
         <h1>{props.heading}</h1>
         <textarea
           className="form-control"
           onChange={handleChange}
+          style={{backgroundColor:props.mode ==='dark'?'grey':'white',color:props.mode ==='dark'?'white':'black'}}
           value={text}
           id="exampleFormControlTextarea1"
           rows="8"
@@ -29,7 +30,7 @@ export default function TextForm(props) {
       </button>
       </div>
     </div>
-    <div className="container my-4">
+    <div className="container my-4" style={{color:props.mode ==='dark'?'white':'black'}}>
       <h1>Text Summary</h1>
       <p>{text.split(' ').length}words,{text.length}charecters</p>
     </div>
