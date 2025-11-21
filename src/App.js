@@ -1,9 +1,11 @@
+import { useState } from "react";
 import "./App.css";
 import About from "./components/About.js";
 import Navbar from "./components/Navbar";
 // import TextForm from "./components/TextForm.js";
 
 function App() {
+  const [mode, setMode] = useState('dark');
   let name = "Varun Reddy";
   return (
     <>
